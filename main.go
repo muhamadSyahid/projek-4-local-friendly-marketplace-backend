@@ -17,9 +17,9 @@ import (
 )
 
 func main() {
-	// Load environment variables
+	// Load environment variables from .env in project root (if present)
 	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found, using system environment variables")
+		log.Println("No .env file found at project root, using system environment variables")
 	}
 
 	app := fiber.New()
