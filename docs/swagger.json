@@ -1584,6 +1584,12 @@
                 "shopPhone": {
                     "type": "string"
                 },
+                "lat": {
+                    "type": "string"
+                },
+                "long": {
+                    "type": "string"
+                },
                 "categories": {
                     "type": "array",
                     "items": {

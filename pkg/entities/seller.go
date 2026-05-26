@@ -11,6 +11,8 @@ type Seller struct {
 	ShopAddress     *string    `json:"shopAddress" bson:"shopAddress,omitempty"`
 	ShopPhone       *string    `json:"shopPhone" bson:"shopPhone,omitempty"`
 	Location        *Location  `json:"location" bson:"location,omitempty"`
+	Lat             float64    `json:"lat" bson:"lat"`
+	Long            float64    `json:"long" bson:"long"`
 	Categories      []string   `json:"categories" bson:"categories"`
 	Rating          float64    `json:"rating" bson:"rating"`
 	TotalReviews    int        `json:"totalReviews" bson:"totalReviews"`
